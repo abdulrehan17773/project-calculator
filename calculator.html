@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+   <div class="head">
+      <h2>Calculator</h2>
+   </div>
+    <div id="cont" class="cal">
+        <input id="in" class="put"></input>
+        <button id="but1" class="but">1</button>
+        <button id="but2" class="but">2</button>
+        <button id="but3" class="but">3</button>
+        <button id="but4" class="but">+</button>
+        <button id="but5" class="but">4</button>
+        <button id="but6" class="but">5</button>
+        <button id="but7" class="but">6</button>
+        <button id="but8" class="but">-</button>
+        <button id="but9" class="but">7</button>
+        <button id="but10" class="but">8</button>
+        <button id="but11" class="but">9</button>
+        <button id="but12" class="but">*</button>
+        <button id="but13" class="but">C</button>
+        <button id="but14" class="but">0</button>
+        <button id="but15" class="but">=</button>
+        <button id="but16" class="but">/</button>
+    </div>
+   
+</body>
+<script>
+
+ let but1 = document.getElementById(`but1`)
+ let but2 = document.getElementById(`but2`)
+ let but3 = document.getElementById(`but3`)
+ let but4 = document.getElementById(`but4`)
+ let but5 = document.getElementById(`but5`)
+ let but6 = document.getElementById(`but6`)
+ let but7 = document.getElementById(`but7`)
+ let but8 = document.getElementById(`but8`)
+ let but9 = document.getElementById(`but9`)
+ let but10 = document.getElementById(`but10`)
+ let but11 = document.getElementById(`but11`)
+ let but12 = document.getElementById(`but12`)
+ let but13 = document.getElementById(`but13`)
+ let but14 = document.getElementById(`but14`)
+ let but15 = document.getElementById(`but15`)
+ let but16 = document.getElementById(`but16`)
+ let input = document.getElementById(`in`)
+
+ 
+ but1.addEventListener(`click`, function(){
+    input.value += 1
+ })
+ but2.addEventListener(`click`, function(){
+    input.value += 2
+ })
+ but3.addEventListener(`click`, function(){
+    input.value += 3
+ })
+ but4.addEventListener(`click`, function(){
+    input.value += `+`
+ })
+ but5.addEventListener(`click`, function(){
+    input.value += 4
+ })
+ but6.addEventListener(`click`, function(){
+    input.value += 5
+ })
+ but7.addEventListener(`click`, function(){
+    input.value += 6
+ })
+ but8.addEventListener(`click`, function(){
+    input.value += `-`
+ })
+ but9.addEventListener(`click`, function(){
+    input.value += 7
+ })
+ but10.addEventListener(`click`, function(){
+    input.value += 8
+ })
+ but11.addEventListener(`click`, function(){
+    input.value += 9
+ })
+ but12.addEventListener(`click`, function(){
+    input.value += `*`
+ })
+ but14.addEventListener(`click`, function(){
+    input.value += 0
+ })
+ but16.addEventListener(`click`, function(){
+    input.value += `/`
+ })
+but13.addEventListener(`click`, function(){
+    input.value = ``
+})
+but15.addEventListener(`click`, function(){
+   input.value = eval(input.value)
+})
+
+
+
+</script>
+</html>
